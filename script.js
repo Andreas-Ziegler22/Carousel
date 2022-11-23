@@ -28,6 +28,12 @@ function resetInterval() {
 }
 
 btnRight.addEventListener("click", () => {
+  index++;
+  changeImage();
+  resetInterval();
+});
+
+btnLeft.addEventListener("click", () => {
   index--;
   changeImage();
   resetInterval();
